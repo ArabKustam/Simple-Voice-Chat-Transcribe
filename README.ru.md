@@ -1,46 +1,35 @@
 <div align="center">
 
-<img src="icon.png" width="128" alt="Иконка SVC-Transcribe">
+<img src="docs/images/banner-ru.png" alt="SVC-Transcribe">
 
-# SVC-Transcribe
+[Релизы](https://github.com/ArabKustam/Simple-Voice-Chat-Transcribe/releases) | [Modrinth](https://modrinth.com/plugin/svc-transcribe) | [Настройка](#настройка) | [API](#для-разработчиков) | [Сообщить об ошибке](https://github.com/ArabKustam/Simple-Voice-Chat-Transcribe/issues) | [English](README.md)
 
-**Распознавание речи из [Simple Voice Chat](https://modrinth.com/plugin/simple-voice-chat) в реальном времени.**
-Игрок говорит, и все, кто его слышит, видят его слова в облачке над головой.
-
+[![Release](https://img.shields.io/github/v/release/ArabKustam/Simple-Voice-Chat-Transcribe?label=release)](https://github.com/ArabKustam/Simple-Voice-Chat-Transcribe/releases)
 [![Build](https://github.com/ArabKustam/Simple-Voice-Chat-Transcribe/actions/workflows/build.yml/badge.svg)](https://github.com/ArabKustam/Simple-Voice-Chat-Transcribe/actions)
+![Paper 1.20.2+](https://img.shields.io/badge/Paper%20%2F%20Spigot-1.20.2%E2%80%931.21.11-brightgreen)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-![Paper 1.20.2+](https://img.shields.io/badge/Paper%20%2F%20Spigot-1.20.2%2B-brightgreen)
-![Java 17+](https://img.shields.io/badge/Java-17%2B-orange)
-
-[English version](README.md) · [Скачать](https://github.com/ArabKustam/Simple-Voice-Chat-Transcribe/releases) · [Сообщить об ошибке](https://github.com/ArabKustam/Simple-Voice-Chat-Transcribe/issues)
 
 </div>
 
-![Живые субтитры](docs/images/live-subtitles-ru.png)
+## Видно, что говорят в голосовом чате
+
+Игроки говорят в [Simple Voice Chat](https://modrinth.com/plugin/simple-voice-chat), и все, кто их слышит, видят их слова над головой. Текст растёт по словам прямо во время речи. Игрокам не нужны ни дополнительные моды, ни ресурспаки.
+
+<p align="center"><img src="docs/images/live-demo-ru.gif" alt="Живые субтитры" width="760"></p>
 
 ## Возможности
 
-- **Живые субтитры.** Текст появляется и растёт, пока игрок ещё говорит, а не через несколько секунд.
-- **Работает по правилам голосового чата.** Облачко видят только те, кто реально слышит говорящего: дальность голоса, шёпот и группы.
-- **Без модов для субтитров.** Облачка сделаны на обычных text display, игрокам нужен только сам Simple Voice Chat.
-- **Несколько облачков.** До 3 над игроком: новая фраза появляется у головы, старые поднимаются вверх и плавно исчезают. Длинная речь делится на несколько облачков.
-- **Свой стиль.** Пресеты (light, dark, glass, minimal) или свои цвета фона и текста, хвостик, выравнивание, отступы и размер.
-- **Копия в чат.** Каждая законченная фраза приходит в чат тем, кто её слышал.
-- **Выбор движка распознавания**, переключение прямо в игре:
+![Живые субтитры](docs/images/panel-1-ru.png)
 
-| Движок | Где работает | Языки | Лучше всего для |
-|---|---|---|---|
-| `vosk` | на сервере, бесплатно | 20+ | Слабых серверов и многих языков |
-| `t-one` | на сервере, бесплатно | русский | Бесплатного и точного русского |
-| `deepgram` | облако, платно (стартовый кредит при регистрации) | много + автоопределение | Максимальной точности, пунктуации, ников |
-| `openai` | облако, платно | любые + автоопределение | Любых языков |
+<p align="center"><img src="docs/images/conversation-ru.gif" alt="Разговор двух игроков" width="860"></p>
 
-- **Умный текст.** Ники онлайн-игроков узнаются. Числа и арифметика пишутся цифрами и знаками (2 + 2 = 4).
-- **API для разработчиков.** Начало и конец речи, живой и итоговый текст, триггеры фраз, фильтры субтитров, события Bukkit.
-- **Для больших серверов.** Распознавание никогда не идёт в основном потоке, каждый игрок обрабатывается отдельно, есть защита от перегрузки.
-- **Приватность.** Голос не сохраняется на диск. Облачные движки получают звук только пока игрок говорит.
+![Стили облачков](docs/images/panel-2-ru.png)
 
-![Несколько игроков и копия в чат](docs/images/speakers-chat-ru.png)
+![Движки распознавания](docs/images/panel-3-ru.png)
+
+![Для разработчиков](docs/images/panel-4-ru.png)
+
+Облачка видят только те, кто слышит говорящего: дальность голоса, шёпот и группы.
 
 ![Как это работает](docs/images/how-it-works-ru.png)
 
@@ -91,10 +80,6 @@
 ## Настройка
 
 Настройки меняются двумя способами: в [`config.yml`](platform-paper/src/main/resources/config.yml) с последующим `/vtt reload` или прямо в игре командой `/vtt set <параметр> <значение>`, например `/vtt set subtitles.style.preset dark`. Все параметры описаны в конфиге: язык, движок и ключи API, облачка и их вид, кто их видит, тайминги, копия в чат, цифры, ники, миры, производительность и отладка. Тексты сообщений лежат в `plugins/SVC-Transcribe/lang/` (английский и русский).
-
-![Стили облачков](docs/images/bubble-styles-ru.png)
-
-![Несколько облачков](docs/images/stacked-bubbles-ru.png)
 
 ```yaml
 subtitles:
