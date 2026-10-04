@@ -1,10 +1,10 @@
-## SVC-Transcribe 1.0.0
+## SVC-Transcribe 1.0.1
 
-First release: real-time speech-to-text for Simple Voice Chat with speech bubbles above players. Built on the same core as PV-Transcribe; it has not been tested in game with Simple Voice Chat yet, please report issues.
+`/vtt help` now shows links to GitHub, the author's Discord (**arab_kustam**) and the voice chat Discord; `website` and author added to plugin.yml. Everything else is the same as 1.0.0.
 
 ### Downloads
 
-`SVC-Transcribe-1.0.0.jar` is attached below.
+`SVC-Transcribe-1.0.1.jar` is attached below.
 
 ### Compatibility
 
@@ -21,7 +21,7 @@ On first start the server downloads the Vosk / ONNX Runtime libraries from Maven
 ### Installation
 
 1. Install Simple Voice Chat on the server.
-2. Put `SVC-Transcribe-1.0.0.jar` into `plugins/` and start the server.
+2. Put `SVC-Transcribe-1.0.1.jar` into `plugins/` and start the server.
 3. Optional: for the best accuracy set a Deepgram key (`engine.deepgram.api-key`) and run `/vtt engine deepgram`.
 
 ### Changes

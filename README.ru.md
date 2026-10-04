@@ -123,6 +123,12 @@ Paper, Spigot и Purpur 1.20.2 и новее. Проверено на 1.21.8.
 ./gradlew runServer      # тестовый сервер
 ```
 
+## Поддержка
+
+- Ошибки и идеи: [GitHub Issues](https://github.com/ArabKustam/Simple-Voice-Chat-Transcribe/issues)
+- Автор в Discord: **arab_kustam**
+- Discord Simple Voice Chat: https://discord.gg/4dH2zwTmyX
+
 ## Лицензия
 
 [MIT](LICENSE). Сторонние компоненты: [THIRD_PARTY.md](THIRD_PARTY.md).

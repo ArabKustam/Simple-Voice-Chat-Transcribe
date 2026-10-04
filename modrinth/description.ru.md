@@ -19,3 +19,5 @@
 - 🔒 Голос не сохраняется на диск
 
 **Требования:** Paper / Spigot / Purpur 1.20.2–1.21.11, Java 17+, Simple Voice Chat **2.5+** (Bukkit/Paper version).
+
+**Ссылки:** [GitHub](https://github.com/ArabKustam/Simple-Voice-Chat-Transcribe) · [Ошибки и идеи](https://github.com/ArabKustam/Simple-Voice-Chat-Transcribe/issues) · Автор в Discord: **arab_kustam** · [Discord Simple Voice Chat](https://discord.gg/4dH2zwTmyX)

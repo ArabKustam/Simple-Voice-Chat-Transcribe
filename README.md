@@ -159,6 +159,12 @@ No. Audio stays in memory only while it is being recognised. With a cloud engine
 | `voice-*` | Voice chat adapter |
 | `platform-paper` | Bukkit plugin |
 
+## Support
+
+- Bugs and ideas: [GitHub Issues](https://github.com/ArabKustam/Simple-Voice-Chat-Transcribe/issues)
+- Author on Discord: **arab_kustam**
+- Simple Voice Chat Discord: https://discord.gg/4dH2zwTmyX
+
 ## License
 
 [MIT](LICENSE). Third-party components: [THIRD_PARTY.md](THIRD_PARTY.md).
