@@ -27,12 +27,13 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: PV-Transcribe
-          path: build/libs/PV-Transcribe-*.jar
+          name: SVC-Transcribe
+          path: build/libs/SVC-Transcribe-*.jar
 
       - name: Release
         if: startsWith(github.ref, 'refs/tags/v')
         uses: softprops/action-gh-release@v2
         with:
-          files: build/libs/PV-Transcribe-*.jar
-          body_path: CHANGELOG.md
+          name: SVC-Transcribe ${{ github.ref_name }}
+          files: build/libs/SVC-Transcribe-*.jar
+          body_path: .github/release-notes.md
