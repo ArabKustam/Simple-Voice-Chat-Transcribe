@@ -70,6 +70,7 @@
 | `/svct toggle` | Скрыть или показать облачка для себя | `svctranscribe.command.toggle` (все) |
 | `/svct status` | Состояние движка, нагрузка, потерянный звук | `svctranscribe.admin.status` |
 | `/svct reload` | Перезагрузить конфиг и сообщения | `svctranscribe.admin.reload` |
+| `/svct demo [игрок] [текст]` | Демо-облачко без микрофона (проверить стиль, сделать скриншот) | `svctranscribe.admin.demo` |
 | `/svct get [раздел]` | Показать настройки (ключи API скрыты) | `svctranscribe.admin.config` |
 | `/svct set <параметр> <значение>` | Изменить **любой** параметр конфига прямо в игре; Tab подсказывает параметры и значения; сохраняется в config.yml | `svctranscribe.admin.config` |
 | `/svct engine <auto\|vosk\|t-one\|deepgram\|openai>` | Сменить движок на лету | `svctranscribe.admin.engine` |

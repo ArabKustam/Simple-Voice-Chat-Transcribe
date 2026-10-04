@@ -69,6 +69,7 @@ Players talk, and everyone who hears them sees their words in speech bubbles abo
 | `/svct toggle` | Hide or show bubbles for yourself | `svctranscribe.command.toggle` (everyone) |
 | `/svct status` | Engine state, load, dropped audio | `svctranscribe.admin.status` |
 | `/svct reload` | Reload config and messages | `svctranscribe.admin.reload` |
+| `/svct demo [player] [text]` | Show a demo bubble without a microphone (test styles, take screenshots) | `svctranscribe.admin.demo` |
 | `/svct get [section]` | Show settings (API keys are masked) | `svctranscribe.admin.config` |
 | `/svct set <option> <value>` | Change **any** config option in game; Tab completes options and values; saved to config.yml | `svctranscribe.admin.config` |
 | `/svct engine <auto\|vosk\|t-one\|deepgram\|openai>` | Switch the speech engine live | `svctranscribe.admin.engine` |
