@@ -100,7 +100,7 @@ final class SVCTranscribeCommand implements TabExecutor {
                         sections.add(dot > 0 ? p.substring(0, dot) : p);
                     }
                     messages.raw(sender, "&7Sections: &f" + String.join("&7, &f", sections)
-                            + " &7- use &f/svct get <section>");
+                            + " &7- use &f/vtt get <section>");
                     return true;
                 }
                 for (String p : paths) {
@@ -147,7 +147,7 @@ final class SVCTranscribeCommand implements TabExecutor {
                 if (!check(sender, "svctranscribe.admin.engine")) return true;
                 if (args.length < 2) {
                     messages.raw(sender, "&7Language: &f" + plugin.service().getEngineInfo().language()
-                            + "&7. Usage: &f/svct language <ru|en|de|...|auto>");
+                            + "&7. Usage: &f/vtt language <ru|en|de|...|auto>");
                     return true;
                 }
                 plugin.setLanguage(args[1]);

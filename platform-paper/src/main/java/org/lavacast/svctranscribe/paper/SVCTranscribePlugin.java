@@ -71,7 +71,7 @@ public final class SVCTranscribePlugin extends JavaPlugin {
         getServer().getScheduler().runTaskTimer(this, platform::refreshAll, 10L, 10L);
 
         SVCTranscribeCommand command = new SVCTranscribeCommand(this);
-        PluginCommand pluginCommand = getCommand("svctranscribe");
+        PluginCommand pluginCommand = getCommand("vtt");
         if (pluginCommand != null) {
             pluginCommand.setExecutor(command);
             pluginCommand.setTabCompleter(command);
