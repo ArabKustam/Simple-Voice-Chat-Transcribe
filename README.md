@@ -69,6 +69,8 @@ Players talk, and everyone who hears them sees their words in speech bubbles abo
 | `/svct toggle` | Hide or show bubbles for yourself | `svctranscribe.command.toggle` (everyone) |
 | `/svct status` | Engine state, load, dropped audio | `svctranscribe.admin.status` |
 | `/svct reload` | Reload config and messages | `svctranscribe.admin.reload` |
+| `/svct get [section]` | Show settings (API keys are masked) | `svctranscribe.admin.config` |
+| `/svct set <option> <value>` | Change **any** config option in game; Tab completes options and values; saved to config.yml | `svctranscribe.admin.config` |
 | `/svct engine <auto\|vosk\|t-one\|deepgram\|openai>` | Switch the speech engine live | `svctranscribe.admin.engine` |
 | `/svct language <code\|auto>` | Recognition language, `auto` = detect | `svctranscribe.admin.engine` |
 | `/svct player <name> <on\|off>` | Enable or disable transcription for a player | `svctranscribe.admin.player` |
@@ -84,7 +86,7 @@ More permissions:
 
 ## Configuration
 
-Every option is documented in [`config.yml`](platform-paper/src/main/resources/config.yml): language, engine and API keys, bubbles and their look, who sees them, timings, chat copy, number formatting, nickname matching, worlds, performance and debugging. Messages are in `plugins/SVC-Transcribe/lang/` (English and Russian).
+Settings can be changed in two ways: edit [`config.yml`](platform-paper/src/main/resources/config.yml) and run `/svct reload`, or change them in game with `/svct set <option> <value>`, for example `/svct set subtitles.style.preset dark`. Every option is documented in the config: language, engine and API keys, bubbles and their look, who sees them, timings, chat copy, number formatting, nickname matching, worlds, performance and debugging. Messages are in `plugins/SVC-Transcribe/lang/` (English and Russian).
 
 ![Bubble styles](docs/images/bubble-styles-en.png)
 

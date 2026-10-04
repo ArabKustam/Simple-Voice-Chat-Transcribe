@@ -30,11 +30,15 @@ permissions:
     description: All admin commands
     default: op
     children:
-      svctranscribe.admin.reload: true
+      svctranscribe.admin.config:
+    description: View and change any config option (/svct get, /svct set)
+    default: op
+  svctranscribe.admin.reload: true
       svctranscribe.admin.status: true
       svctranscribe.admin.player: true
       svctranscribe.admin.world: true
       svctranscribe.admin.engine: true
+      svctranscribe.admin.config: true
   svctranscribe.admin.engine:
     description: Switch the speech engine and language (/svct engine, /svct language)
     default: op

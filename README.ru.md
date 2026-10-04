@@ -70,6 +70,8 @@
 | `/svct toggle` | Скрыть или показать облачка для себя | `svctranscribe.command.toggle` (все) |
 | `/svct status` | Состояние движка, нагрузка, потерянный звук | `svctranscribe.admin.status` |
 | `/svct reload` | Перезагрузить конфиг и сообщения | `svctranscribe.admin.reload` |
+| `/svct get [раздел]` | Показать настройки (ключи API скрыты) | `svctranscribe.admin.config` |
+| `/svct set <параметр> <значение>` | Изменить **любой** параметр конфига прямо в игре; Tab подсказывает параметры и значения; сохраняется в config.yml | `svctranscribe.admin.config` |
 | `/svct engine <auto\|vosk\|t-one\|deepgram\|openai>` | Сменить движок на лету | `svctranscribe.admin.engine` |
 | `/svct language <код\|auto>` | Язык распознавания, `auto` — автоопределение | `svctranscribe.admin.engine` |
 | `/svct player <ник> <on\|off>` | Включить или выключить транскрибацию игрока | `svctranscribe.admin.player` |
@@ -85,7 +87,7 @@
 
 ## Настройка
 
-Все параметры с комментариями есть в [`config.yml`](platform-paper/src/main/resources/config.yml): язык, движок и ключи API, облачка и их вид, кто их видит, тайминги, копия в чат, цифры, ники, миры, производительность и отладка. Тексты сообщений лежат в `plugins/SVC-Transcribe/lang/` (английский и русский).
+Настройки меняются двумя способами: в [`config.yml`](platform-paper/src/main/resources/config.yml) с последующим `/svct reload` или прямо в игре командой `/svct set <параметр> <значение>`, например `/svct set subtitles.style.preset dark`. Все параметры описаны в конфиге: язык, движок и ключи API, облачка и их вид, кто их видит, тайминги, копия в чат, цифры, ники, миры, производительность и отладка. Тексты сообщений лежат в `plugins/SVC-Transcribe/lang/` (английский и русский).
 
 ![Стили облачков](docs/images/bubble-styles-ru.png)
 
