@@ -99,7 +99,7 @@ subtitles:
 
 ## For developers
 
-SVC-Transcribe and [PV-Transcribe](https://github.com/ArabKustam/Plasma-Voice-Transcribe) (Plasmo Voice) share the same API, so your plugin works with either voice chat without changes. Add the plugin jar as `compileOnly` and `softdepend: [PV-Transcribe, SVC-Transcribe]` to your `plugin.yml`.
+SVC-Transcribe and [PV-Transcribe](https://github.com/ArabKustam/Plasmo-Voice-Transcribe) (Plasmo Voice) share the same API, so your plugin works with either voice chat without changes. Add the plugin jar as `compileOnly` and `softdepend: [PV-Transcribe, SVC-Transcribe]` to your `plugin.yml`.
 
 ```java
 PVTranscribeApi api = PVTranscribe.get();
@@ -136,7 +136,7 @@ A `Transcript` has the speaker, `getText()`, `getRawText()`, `getNormalizedText(
 Paper, Spigot and Purpur 1.20.2 and newer (text displays appeared in 1.19.4, smooth movement in 1.20.2). Tested on 1.21.8.
 
 **Does it work with Plasmo Voice?**
-Use [PV-Transcribe](https://github.com/ArabKustam/Plasma-Voice-Transcribe). Install only one of the two plugins.
+Use [PV-Transcribe](https://github.com/ArabKustam/Plasmo-Voice-Transcribe). Install only one of the two plugins.
 
 **How accurate is it?**
 It depends on the engine. Deepgram is the most accurate: names, punctuation, digits. T-one is a good free choice for Russian. Vosk is the lightest, but it sometimes swaps rare words for similar common ones.

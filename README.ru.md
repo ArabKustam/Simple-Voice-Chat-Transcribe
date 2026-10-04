@@ -100,7 +100,7 @@ subtitles:
 
 ## Для разработчиков
 
-У SVC-Transcribe и [PV-Transcribe](https://github.com/ArabKustam/Plasma-Voice-Transcribe) (Plasmo Voice) общий API, поэтому ваш плагин работает с любым голосовым чатом без изменений. Подключите jar плагина как `compileOnly` и добавьте `softdepend: [PV-Transcribe, SVC-Transcribe]` в `plugin.yml`.
+У SVC-Transcribe и [PV-Transcribe](https://github.com/ArabKustam/Plasmo-Voice-Transcribe) (Plasmo Voice) общий API, поэтому ваш плагин работает с любым голосовым чатом без изменений. Подключите jar плагина как `compileOnly` и добавьте `softdepend: [PV-Transcribe, SVC-Transcribe]` в `plugin.yml`.
 
 ```java
 PVTranscribeApi api = PVTranscribe.get();
@@ -145,7 +145,7 @@ api.addSubtitleProcessor((transcript, text) -> text.replace("плохоесло�
 Paper, Spigot и Purpur 1.20.2 и новее (текстовые дисплеи появились в 1.19.4, плавное движение в 1.20.2). Проверено на 1.21.8.
 
 **Работает ли с Plasmo Voice?**
-Для него есть отдельный плагин [PV-Transcribe](https://github.com/ArabKustam/Plasma-Voice-Transcribe). Ставьте только один из двух.
+Для него есть отдельный плагин [PV-Transcribe](https://github.com/ArabKustam/Plasmo-Voice-Transcribe). Ставьте только один из двух.
 
 **Насколько точно?**
 Зависит от движка. Deepgram самый точный: ники, пунктуация, цифры. T-one — хороший бесплатный вариант для русского. Vosk самый лёгкий, но иногда заменяет редкие слова на похожие частые.
