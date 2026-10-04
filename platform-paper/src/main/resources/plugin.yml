@@ -30,7 +30,10 @@ permissions:
     description: All admin commands
     default: op
     children:
-      svctranscribe.admin.config:
+      svctranscribe.admin.demo:
+    description: Show a demo speech bubble without a microphone (/svct demo)
+    default: op
+  svctranscribe.admin.config:
     description: View and change any config option (/svct get, /svct set)
     default: op
   svctranscribe.admin.reload: true
@@ -39,6 +42,7 @@ permissions:
       svctranscribe.admin.world: true
       svctranscribe.admin.engine: true
       svctranscribe.admin.config: true
+      svctranscribe.admin.demo: true
   svctranscribe.admin.engine:
     description: Switch the speech engine and language (/svct engine, /svct language)
     default: op
