@@ -18,34 +18,25 @@ commands:
 
 permissions:
   svctranscribe.see:
-    description: See subtitles above speaking players
+    description: See speech bubbles above speaking players
     default: true
   svctranscribe.transcribe:
-    description: Own speech is transcribed (subtitles and API events)
+    description: Own speech is transcribed (bubbles and API events)
     default: true
   svctranscribe.command.toggle:
-    description: Hide or show subtitles for yourself with /svct toggle
+    description: Hide or show speech bubbles for yourself with /svct toggle
     default: true
   svctranscribe.admin:
     description: All admin commands
     default: op
     children:
-      svctranscribe.admin.demo:
-    description: Show a demo speech bubble without a microphone (/svct demo)
-    default: op
-  svctranscribe.admin.config:
-    description: View and change any config option (/svct get, /svct set)
-    default: op
-  svctranscribe.admin.reload: true
+      svctranscribe.admin.reload: true
       svctranscribe.admin.status: true
       svctranscribe.admin.player: true
       svctranscribe.admin.world: true
       svctranscribe.admin.engine: true
       svctranscribe.admin.config: true
       svctranscribe.admin.demo: true
-  svctranscribe.admin.engine:
-    description: Switch the speech engine and language (/svct engine, /svct language)
-    default: op
   svctranscribe.admin.reload:
     description: Reload the config (/svct reload)
     default: op
@@ -57,4 +48,13 @@ permissions:
     default: op
   svctranscribe.admin.world:
     description: Enable or disable transcription in a world (/svct world)
+    default: op
+  svctranscribe.admin.engine:
+    description: Switch the speech engine and language (/svct engine, /svct language)
+    default: op
+  svctranscribe.admin.config:
+    description: View and change any config option (/svct get, /svct set)
+    default: op
+  svctranscribe.admin.demo:
+    description: Show a demo speech bubble without a microphone (/svct demo)
     default: op

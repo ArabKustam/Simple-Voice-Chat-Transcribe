@@ -18,6 +18,7 @@ dependencies {
     implementation(project(":voice-simplevoice"))
 
     compileOnly("io.papermc.paper:paper-api:${property("paperApiVersion")}")
+    testImplementation("org.yaml:snakeyaml:2.2")
     compileOnly("de.maxhenkel.voicechat:voicechat-api:${property("voicechatApiVersion")}")
 }
 
